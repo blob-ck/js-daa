@@ -13,7 +13,7 @@ function sortAtMerge(firstArr, secondArr) {
     let firstIndex = 0;
     let secondIndex = 0;
     const sortedArr = [];
-    while(sortedArr.length <= firstArr.length + secondArr.length) {
+    while(sortedArr.length < firstArr.length + secondArr.length) {
         if (firstArr[firstIndex] < secondArr[secondIndex]) {
             sortedArr.push(firstArr[firstIndex]);
             firstIndex++;
@@ -33,4 +33,5 @@ function sortAtMerge(firstArr, secondArr) {
     return sortedArr;
 }
 
-console.log(`[ ${mergeSort([3,6,1,65,7,467,5,1,54,234]).join(', ')} ]`);
+const arr = [ 3, 6, 1, 65, 7, 467, 5, 1, 54, 234 ];
+console.log(`[ ${mergeSort(arr).join(', ')} ]`);
