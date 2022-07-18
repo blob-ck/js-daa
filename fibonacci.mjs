@@ -5,7 +5,7 @@ function fibonacci(n) {
     return fibonacci(n-2) + fibonacci(n-1);
 }
 
-const fibonacciTime = 'Check Time Taken Executing function fibonacci';
+const fibonacciTime = 'Check time for executing function fibonacci';
 console.time(fibonacciTime);
 fibonacci(num);
 console.timeEnd(fibonacciTime);
@@ -19,7 +19,7 @@ function fibonacciWithMemo(n, memo = {}) {
     return memo[n];
 }
 
-const fibonacciWithMemoTime = 'Check Time Taken Executing function fibonacciWithMemo';
+const fibonacciWithMemoTime = 'Check time for executing function fibonacciWithMemo';
 console.time(fibonacciWithMemoTime);
 fibonacciWithMemo(num);
 console.timeEnd(fibonacciWithMemoTime);
@@ -31,7 +31,7 @@ function fibonacciWithMemo2(n, memo = {}) {
     return memo[n];
 }
 
-const fibonacciWithMemo2Time = 'Check Time Taken Executing function fibonacciWithMemo2';
+const fibonacciWithMemo2Time = 'Check time for executing function fibonacciWithMemo2';
 console.time(fibonacciWithMemo2Time);
 fibonacciWithMemo2(num);
 console.timeEnd(fibonacciWithMemo2Time);
@@ -39,7 +39,7 @@ console.timeEnd(fibonacciWithMemo2Time);
 
 
 /**
- * Check Time Taken Executing function fibonacci: 1370.379150390625 ms
- * Check Time Taken Executing function fibonacciWithMemo: 0.152099609375 ms
- * Check Time Taken Executing function fibonacciWithMemo2: 0.0498046875 ms
+ * Check time for executing function fibonacci: 1370.379150390625 ms
+ * Check time for executing function fibonacciWithMemo: 0.152099609375 ms
+ * Check time for executing function fibonacciWithMemo2: 0.0498046875 ms
  */
